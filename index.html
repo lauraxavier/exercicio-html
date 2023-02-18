@@ -1,69 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula HTML e CSS</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/img/html.png" type="image/x-icon">
+    <title>Escola ProgramaI</title>
 </head>
 
 <body>
-    <!-- cabeçalho -->
-    <header style="width: 100%; border: 2px solid black;">
-        <nav style="width: 500px; border: 2px solid red;">
-            <ul>
-                <li><a href="#">Principal</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav> <br>
+    <header>
+        <div class="maxWidth">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="./assets/img/html.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Professores</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <!-- <main> -> Conteúdo principal de uma págine web -->
-    <main style="width: 100%; border: 2px solid blue;">
+    <main>
+        <section>
+            <div class="container-contact">
+                <div class="maxWidth">
+                    <div class="form-container">
+                        <h1>Escola de programação PROGRAMAI</h1>
+                        <h2>Faça sua inscrição para uma <br> aula experimental</h2>
+                        <form>
+                            <label>
+                                Nome:
+                            </label> <br>
+                            <input type="text" placeholder="Nome">
+                            <label>
+                                Email:
+                            </label> <br>
+                            <input type="email" placeholder="E-mail">
+                            <label>
+                                Telefone:
+                            </label> <br>
+                            <input type="tel" placeholder="Telefone">
+                            <label>
+                                Idade :
+                            </label> <br>
+                            <input type="number" placeholder="Idade"> <br> <br>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
-        <h1 align="center">Título principal</h1>
-        <!-- <section> -> Seção de uma página de web -->
-        <section style="width: 500px; border: 2px solid red;">
-            <h2>Seção 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus debitis tempora accusantium velit
-                dolorum earum magnam eligendi eveniet! Beatae fuga ex incidunt eaque tenetur voluptates inventore sint
-                quisquam nisi vero!
-            </p>
-        </section> <br>
+        </section>
 
-        <section style="width: 500px; border: 2px solid yellow;">
-            <h2>Seção 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cumque eveniet eos accusamus impedit
-                neque assumenda, et praesentium numquam ea. Sint tempora sapiente eaque alias laboriosam ipsum aliquid
-                at tenetur.
-            </p>
-        </section> <br>
+        <section>
+            <div class="maxWidth">
+                <div class="container">
+                    <h2>Informações dos Professores</h2>
+                    <table>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Especialidade</th>
+                        </tr>
+                        <tr>
+                            <td>Joaquim</td>
+                            <td>HTML CSS</td>
+                        </tr>
+                        <tr>
+                            <td>José</td>
+                            <td>JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro</td>
+                            <td>Phyton</td>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td>Paula</td>
+                            <td>C++</td>
+                        </tr>
+                        <tr>
+                            <td>João</td>
+                            <td>PHP</td>
+                        </tr>
+                    </table>
+                </div>
 
-        <section style="width: 500px; border: 2px solid purple;">
-            <h2>Seção 3</h2>
-            <!-- Article - artigos -->
-            <article style="width: 200px; border: 2px solid black;">
-                <h3>Artigo 1</h3>
-            </article> <br>
+            </div>
 
-            <article style="width: 200px; border: 2px solid rgb(235, 98, 8);">
-                <h3>Artigo 2</h3>
-            </article>
-        </section> <br>
+        </section>
 
+        <section>
+            <div class="maxWidth">
+                <div class="container">
+                    <h2>Horários</h2>
+                    <ul>
+                        <li>Segunda das 9hs às 18hs</li>
+                        <li>Terça das 9hs às 18hs</li>
+                        <li>Quarta das 9hs às 18hs</li>
+                        <li>Quinta das 9hs às 18hs</li>
+                        <li>Sexta das 9hs às 18hs</li>
+                        <li>Sabado das 12hs às 18hs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- rodapé -->
     <footer>
-        <ul>
-            <li><a href="#">Principal</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre</a></li>
-        </ul>
-
-        <p>Todos os direitos reservados Jéssica Venâncio</p>
+        <div class="maxWidth">
+            <p>&copy; 2023 Escola ProgramaI. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 </body>
